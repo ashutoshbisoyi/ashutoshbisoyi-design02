@@ -270,6 +270,9 @@ body{
 	height: auto;
 	/* background-image: url("bg3.png") */
 }
+#tap{
+	display: none;
+}
 .chart{
 	height:500px;
 	width: 500px;
@@ -538,20 +541,29 @@ body{
 	
 }
 /* ---------------------Skill Div------------------------ */
+.skilldiv{
+	overflow: hidden;
+}
+#tap{
+	display:block;
+	position: absolute;
+	font-size: 2.5em;
+	font-family: 'Montserrat', sans-serif;
+	letter-spacing: 2px;
+	left: 20%;
+	top: 10%;
+	opacity: 0.3;
 
+}
 .chart{
-	height:300px;
-	width: 400px;
+	height:auto;
+	width: auto;
 	transform: rotate(-90deg);
 	margin-left:0;
-	margin-bottom: 150px;
+	margin-top: 100px;
+	margin-bottom: 100px;
 }
-.chartbar{
-	padding: 0;
-	transition: all 2s ease;
-	margin-top:13px;
-	height:40px;
-}
+
 .chartbar p{
 	background-color:#878787;
 	padding:5px 10px 12px 10px;
@@ -588,14 +600,16 @@ body{
 		letter-spacing: 1px;
 		transition: all 2s ease;
 		margin-left: 5%;
-		margin-bottom: 20px;
+		margin-bottom: 50px;
 }
 #skilldiv-right img{
 	margin-left:25%;
 	width: 60%;
+	margin-bottom: 70px;
 }
 #skilldiv-right:hover h1{
 		letter-spacing: 6px;
+
 	}
 #skilldiv-right:hover h4{
 		letter-spacing: 3px;
@@ -617,10 +631,9 @@ body{
 }
 .projectdiv h4{
 		width: 70%;
-		margin-left: 50px;
-		transition: all 2s ease;
-		margin-left: 30%;
-		text-align:center;
+		margin-left: 25%;
+		text-align:right;
+		margin-bottom: 30px;
 }
 .container-fluid{
 	color: #fff;
@@ -648,6 +661,7 @@ body{
 		letter-spacing: 1px;
 		margin-left: auto;
 		font-size:1em;
+		text-align: center;
 }
 
 
