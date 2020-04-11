@@ -5,6 +5,7 @@
 body{
 	transition-timing-function: ease;
 	overflow-x: hidden;
+	background-color: #F8F8F8
 }
 
 .intro{
@@ -17,7 +18,7 @@ body{
 }
 .intronamediv{
 	height: auto;
-	width: 30%;
+	width: 50%;
 	margin:auto;
 	padding-top: 150px;
 
@@ -34,16 +35,10 @@ body{
 }
 .socialmediadiv{
 	background-color: white;
-	width:15px;
+	width:25px;
 	margin-left:100%;
 	line-height:2;
 	padding-left: 5px;
-	transition: all 2s ease;
-}
-.socialmediadiv:hover{
-	width:35px;
-	margin-left:99%;
-	padding:0 30px 0 5px;
 }
 .socialmediadiv ul{
 	text-decoration: none;
@@ -51,6 +46,7 @@ body{
 }
 .socialmediadiv i{
 	color: black;
+	margin-right:50%;
 }
 .introdescription{
 	transform: rotate(-90deg);
@@ -58,7 +54,7 @@ body{
 	float:left;
 	position:absolute;
 	bottom: 40%;
-	color:#F8F8F8;
+	color:#dee3e2;
 	left:-7%;
 	transition-property:all;
 	transition-duration: 2s;
@@ -101,7 +97,7 @@ body{
 	position: absolute;
 	top: -35px;
 	left: 10%;
-	width: 90%;
+	width: 86%;
 	height: 100%;
 	overflow: hidden;
 }
@@ -179,7 +175,7 @@ body{
 	width: 100%;
 	background-size: cover;
 	background-repeat:no-repeat;
-	background-color: #F8F8F8/*  orange */;
+	background-color: #F8F8F8;
 }
 
 	.secondtitle{
@@ -267,22 +263,25 @@ body{
 	text-decoration: none;
 }
 
-/* ---------------------Skill Div------------------------ */
+/* ----------------------------------------Skill Div------------------------ */
 .skilldiv{
-	background-color:#F8F8F8;
+	background-color:#dbdbdb;
 	width: 100%;
-	height: auto;
-	/* background-image: url("bg3.png") */
+	height:auto;
+	margin: 50px 0;
+}
+.skillrow{
+	padding-bottom: 0;
 }
 #tap{
 	display: none;
 }
 .chart{
-	height:500px;
-	width: 500px;
+	height:400px;
+	width:400px;
 	transform: rotate(-90deg);
-	margin-left:15%;
-	margin-bottom: 250px;
+	margin-left:auto;
+	margin-bottom:50px;
 }
 .chartbar{
 	
@@ -339,9 +338,11 @@ body{
 	width: 300px;
 }
 .chartbar p{
-	background-color:#878787;
+	background-color:#522D5B;
 	padding:5px 10px 12px 10px;
 	width:100px;
+	color: white;
+	font-weight:300;
 }
 #arrowfa{
 	display: none;
@@ -367,10 +368,10 @@ body{
 	color: #d2d2d2;
 }
 #skilldiv-right h1{
-		margin:200px auto 20px 0;
+		margin:100px auto 20px 0;
 		font-family: 'Montserrat', sans-serif;
 		text-align:left;
-		font-size: 6.25em;
+		font-size: 5em;
 		transition: all 2s ease;
 		width:70%;
 		color: #FF5851;
@@ -383,15 +384,37 @@ body{
 		letter-spacing: 1px;
 		transition: all 2s ease;
 }
-#skilldiv-right img{
-	margin-left:40%;
-	width: 60%;
+#skilldiv-right #webimage{
+	position: absolute;
+	top:192px;
+	width:30%;
+	left:60%;
+	animation:round 2s linear infinite;
+}
+
+@keyframes round{
+ 0%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+	50%{
+		transform: translateY(35px) rotate(0deg);
+		opacity: 1;
+	}
+
+	100%{
+		transform: translateY(0) rotate(0deg);
+		opacity: 1;
+	}
+}
+#skilldiv-right #webimage:hover{
+	animation-play-state: paused;
 }
 #skilldiv-right:hover h1{
 		letter-spacing: 6px;
 	}
 #skilldiv-right:hover h4{
-		letter-spacing: 3px;
+		letter-spacing:1px;
 		width: 50%;
 	}
 #skilldiv-right:hover i{
@@ -414,6 +437,9 @@ body{
 		color: #FF5851;
 		letter-spacing:2px;
 }
+.projectdiv:hover h1{
+	letter-spacing:6px;
+}
 .projectdiv h4{
 		width: 30%;
 		margin-left: 50px;
@@ -422,7 +448,6 @@ body{
 		letter-spacing: 1px;
 		transition: all 2s ease;
 }
-
 #testimonials{
 	text-align: right;
 
@@ -482,11 +507,13 @@ body{
 .network{
 	width: 100%;
 	height: 100vh;
-	background-color:#F8F8F8;
+	background-color:#202040;
 	margin: 0;
+	padding-bottom: 0;
 }
 .row{
 	width: 100%;
+	height:auto;
 }
 .network-left{
 	width: 100%;
@@ -643,7 +670,7 @@ body{
 	display: none;
 }
 #ig-data{
-	background: linear-gradient(to right, #E74C3C 50%,#F8F8F8 50%);
+	background: linear-gradient(to right, #E74C3C 50%,#dee3e2 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 1s ease-out;
@@ -670,7 +697,7 @@ body{
 	display: none;
 }
 #li-data{
-	background: linear-gradient(to right, #2980B9 50%, #F8F8F8 50%);
+	background: linear-gradient(to right, #2980B9 50%, #dee3e2 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: all 1s ease-out;
@@ -714,6 +741,9 @@ body{
 	letter-spacing:2px;
 	width:auto;
 }
+.network-right:hover h1{
+	letter-spacing: 6px
+}
 .network-right h4{
 	transform:rotate(90deg);
 	margin-top:30px;
@@ -723,9 +753,15 @@ body{
 		font-weight: 500;
 		letter-spacing: 1px;
 		transition: all 2s ease;
-
+		color: white;
 }
 
+
+
+
+
+
+/* ---------------------------------------Media Query----------------------- */
 
 @media(max-width: 1000px){
 body{
@@ -761,7 +797,7 @@ body{
 	float:left;
 	position:absolute;
 	bottom: 35%;
-	color:#F8F8F8;
+	color:#dee3e2;
 	left:-35%;
 
 }
@@ -810,6 +846,8 @@ body{
 /* ---------------------Skill Div------------------------ */
 .skilldiv{
 	overflow: hidden;
+	padding-bottom: 100px;
+	background-color:#F8F8F8;
 }
 #tap{
 	display:block;
@@ -869,10 +907,10 @@ body{
 		margin-left: 5%;
 		margin-bottom: 50px;
 }
-#skilldiv-right img{
-	margin-left:25%;
-	width: 60%;
-	margin-bottom: 70px;
+#skilldiv-right #webimage{
+	position: absolute;
+	top:250px;
+	width: 40%;
 }
 #skilldiv-right:hover h1{
 		letter-spacing: 6px;
@@ -887,7 +925,9 @@ body{
 /* --------------------------------------project div------------------------------ */
 
 .projectdiv{
-	height:100vh;
+	height:110vh;
+	padding-bottom:120px;
+
 
 }
 .projectdiv h1{
@@ -933,19 +973,22 @@ body{
 /* -----------------------network------------------------ */
 .network{
 	height:auto;
-	padding-top:100px;
+	padding: 0;
 }
 .row{
 	width: 100%;
 }
 .network-left{
 	width: 100%;
+	background-color: #F8F8F8;
+	padding: 50px 0;
 }
 .network-left table{
 	display: none;
 }
 .mob-network-div{
 	display: block;
+	color:#939393
 }
 .mob-network-div ul{
 	list-style: none;
@@ -953,7 +996,11 @@ body{
 .mob-network-div img{
 	height: 50px;
 	width: 50px;
-	margin:15px 0 0 10px;
+	margin:15px 10px 0 10px;
+}
+.mob-network-div h5{
+	padding-top:10px;
+	margin-right:2px
 }
 .network-right h1{
 	margin-top: 120px;
@@ -975,6 +1022,12 @@ body{
 	height:20px;
 	font-size: 1em;
 }
+
+
+
+
+
+
 
 
 
