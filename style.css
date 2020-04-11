@@ -171,19 +171,21 @@ body{
 /* -----------------------------Second Div Start---------------------- */
 
 .seconddiv{
-	height: 100%;
+	height:50%;
 	width: 100%;
 	background-size: cover;
 	background-repeat:no-repeat;
 	background-color: #F8F8F8;
 }
-
+.secondrow{
+	padding-bottom: 0;
+}
 	.secondtitle{
 		width: 30%;
 
 	}
 	.secondtitle h1{
-		margin:200px auto 0 auto;
+		margin:150px auto 0 auto;
 		font-family: 'Montserrat', sans-serif;
 		text-align:left;
 		font-size: 6.25em;
@@ -269,6 +271,7 @@ body{
 	width: 100%;
 	height:auto;
 	margin: 50px 0;
+	margin-bottom:70px
 }
 .skillrow{
 	padding-bottom: 0;
@@ -348,18 +351,11 @@ body{
 	display: none;
 	opacity: 0;
 }
-.skilldiv-hr{
-	background-color: #d2d2d2;
-	border:4px solid #d2d2d2;
-}
-#skilldiv-hr1{
-	width: 50%
-}
-#skilldiv-hr2{
-	width: 75%
-}
-#skilldiv-hr3{
-	width: 100%
+.projectdivhr{
+	background-color: #FF5851;
+	border:5px solid #FF5851;
+	width: 80%;
+	margin:0 0 100px auto;
 }
 #skilldiv-right i{
 	display: block;
@@ -425,7 +421,8 @@ body{
 .projectdiv{
 	background-color:#F8F8F8;
 	width: 100%;
-	height:100vh;
+	height:auto;
+	padding-bottom: 100px;
 }
 .projectdiv h1{
 		margin-left: 50px;
@@ -509,7 +506,8 @@ body{
 	height: 100vh;
 	background-color:#202040;
 	margin: 0;
-	padding-bottom: 0;
+	padding-bottom:50px;
+	clip-path: polygon(0% 0%,100% 0%,100% 100%,50% 90%,0% 100%);
 }
 .row{
 	width: 100%;
@@ -755,10 +753,47 @@ body{
 		transition: all 2s ease;
 		color: white;
 }
+/* ------------------------------Contact------------------------------------- */
+.contact-container h1{
+	margin:50px auto;
+	margin-bottom: 100px;
+	font-size: 4em;
+	color: rgba(34, 34, 34, 1.0);
+	letter-spacing: 2px;
+}
+.contact-row-info{
+	padding: 50px 0 50px 0;
+}
+.contact-row-table table{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+.contact-row-table table tr{
+	margin-bottom: 10px;
+}
+.contact-row-table{
+	padding: 50px 0 50px 0;
+	background-color: rgba(34, 34, 34, 1.0) !important ;
+}
+.contact-container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.contact-row-info h6{
+	width: 80%;
+}
 
-
-
-
+#footer{
+	color:white;
+	background-color:rgba(34, 34, 34, 1.0) ;
+	padding: 15px;
+	margin-bottom: 0;
+	display: flex;
+}
+#footer p{
+	line-height:40px;
+	color: #F8F8F8;
+}
 
 
 /* ---------------------------------------Media Query----------------------- */
@@ -789,8 +824,7 @@ body{
 	padding-right:10px;
 }
 .socialmediadiv{
-	margin-left:97%;
-	margin-right: 0;
+	display: none;
 }
 .introdescription{
 	width: 80%;
@@ -815,7 +849,7 @@ body{
 	.secondtitle h1{
 		margin:80px auto 0 auto;
 		font-size: 3.25em;
-		width:70%;
+		width:95%;
 
 	}
 	.secondtitle h1:hover{
@@ -923,7 +957,9 @@ body{
 
 
 /* --------------------------------------project div------------------------------ */
-
+.projectdivhr{
+	display: none;
+}
 .projectdiv{
 	height:110vh;
 	padding-bottom:120px;
@@ -937,9 +973,10 @@ body{
 		text-align:left;
 }
 .projectdiv h4{
-		width: 70%;
-		margin-left: 25%;
-		text-align:right;
+		width: 60%;
+		margin-left: auto;
+		text-align:left;
+		font-size: 1em;
 		margin-bottom: 30px;
 }
 .container-fluid{
@@ -947,7 +984,7 @@ body{
 	text-align:center;
 }
 .carousel-image{
-	margin-top: 50px;
+	margin-top: 20px;
 	height: auto;
 	width: 100%;
 	margin-bottom:30px;
@@ -1012,6 +1049,9 @@ body{
 	letter-spacing:2px;
 	width: 100%;
 }
+.network-right h1:hover{
+	letter-spacing:0px;
+}
 .network-right{
 	padding: 0;
 	text-align:left;
@@ -1022,7 +1062,50 @@ body{
 	height:20px;
 	font-size: 1em;
 }
+/* ------------------------------Contact------------------------------------- */
+.contact-container h1{
+	font-size: 3em;
+	margin-bottom: 10px;
+}
+.contact-row{
+	margin: 0;
+	padding: 0;
 
+}
+.contact-row-info{
+	padding: 50px 0;
+	width: 100%;
+}
+.contact-row-table table{
+	width: 80%;
+	margin: 0 auto 0 auto;
+}
+.contact-row-table table tr{
+	margin-bottom: 10px;
+}
+.contact-row-table{
+	padding: 50px 0 50px 0;
+	background-color: rgba(34, 34, 34, 1.0) !important ;
+}
+.contact-container{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.contact-row-info h6{
+	width: 80%;
+}
+
+#footer{
+	color:white;
+	background-color:rgba(34, 34, 34, 1.0) ;
+	padding: 15px;
+	margin-bottom: 0;
+	display: flex;
+}
+#footer p{
+	line-height:40px;
+	color: #F8F8F8;
+}
 
 
 
