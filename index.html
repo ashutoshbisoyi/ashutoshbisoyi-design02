@@ -28,7 +28,7 @@
 
   <body>
     <!-- --------------------------Landing Page------------------------ -->
-    <div class="container-fluid intro wow fadeIn" data-wow-duration="5s">
+    <div class="container-fluid intro wow fadeIn" id="introid" data-wow-duration="5s">
       <div class="intronamediv">
         <h1 id="introname">Hello,<br>I am<br>Ashutosh<div style="display: inline-block" class="wow bounceInDown"  data-wow-duration="3s" data-wow-delay="1s"><font style="color:#FF5851">.</font></div></h1>
       </div>
@@ -62,7 +62,7 @@
         <img src="images/myimage.png" data-aos="fade">
         <p data-aos="fade-up">I'm a freelancer <a href="#">Front-End Developer</a> in India.
               I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.<br>
-        <a href="#">Let's make something special.</a></p>
+        <a href="#contactid">Let's make something special.</a></p>
       </div>
     </div>
     <hr id="underrowhr" data-aos="slide-left">
@@ -197,7 +197,7 @@
         </div>
       </div>
        <!-- -------------------------------------Contact--------------------- -->
-    <div class="container contact-container">
+    <div class="container contact-container" id="contactid">
       <center><h1>Contact</h1></center>
       <div class="row contact-row">
 
@@ -217,7 +217,10 @@
           </table>
         </div>
       </div>
-    </div>   
+    </div>
+
+    <center><a href="#introid" class="btn btn-outline-dark btn-lg mx-5" role="button" aria-pressed="true" id="backtotop-btn">Back to top <i class="fas fa-arrow-up"></i></a></center>
+
     <footer id="footer">
     <div class="container-fluid">
       <center>
@@ -244,7 +247,7 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
      AOS.init({
-      offset:100,
+      offset:50,
       duration:1000
     });
 </script>          
