@@ -2,9 +2,13 @@
 	margin: 0;
 	padding: 0;
 }
+html{
+	scroll-behavior:smooth;
+}
 body{
 	overflow-x: hidden;
-	background-color: #F8F8F8
+	background-color: #F8F8F8;
+	
 }
 h1{
 	font-size: 6.25em;
@@ -193,23 +197,6 @@ h4{
 	border-bottom: 10px solid  #FF5851;
 	transition: all 2s ease;	
 }
-.second-right-part:hover{
-	padding: 0 50px;
-	background-color:#FF5851; 
-}
-.second-right-part:hover p{
-	color: white;
-	width: 100%;
-	background-color: #FF5851;
-	line-height:2.5;
-	font-size: 130%; 
-}
-.second-right-part:hover img{
-	opacity:0.4; 
-}
-.second-right-part:hover a{
-	color: black;
-}
 .second-right-part img{
 	width: 200px;
 	height: 200px;
@@ -243,7 +230,6 @@ h4{
 	width: 100%;
 	margin: 50px 0;
 	margin-bottom:70px;
-	overflow-x: hidden !important;
 }
 #mob-skill-titleh1{
 	display: none;
@@ -757,7 +743,10 @@ h4{
 .contact-row-info h6{
 	width: 80%;
 }
-
+#backtotop-btn{
+	margin: 100px auto;
+	animation:round 1.5s linear infinite;
+}
 #footer{
 	color:white;
 	background-color:rgba(34, 34, 34, 1.0) ;
