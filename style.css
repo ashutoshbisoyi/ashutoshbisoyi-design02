@@ -26,6 +26,7 @@ h4{
 	width:100%;
 	height: 100vh;
 	border: 35px solid white;
+	overflow-x: hidden !important;
 }
 .intro .intronamediv{
 	width: 50%;
@@ -171,6 +172,7 @@ h4{
 	width: 100%;
 	background-color: #F8F8F8;
 	padding-bottom: 50px;
+	/* overflow-x: hidden !important; */
 }
 .secondrow h1{
 	margin:150px auto 0 auto;
@@ -240,6 +242,7 @@ h4{
 	width: 100%;
 	margin: 50px 0;
 	margin-bottom:70px;
+	overflow-x: hidden !important;
 }
 #mob-skill-titleh1{
 	display: none;
@@ -383,6 +386,7 @@ h4{
 	width: 100%;
 	height:auto;
 	padding-bottom: 100px;
+	overflow-x: hidden !important;
 }
 .projec-ttitle-col{
 	display:flex;
@@ -466,6 +470,7 @@ h4{
 	margin: 0;
 	padding-bottom:50px;
 	clip-path: polygon(0% 0%,100% 0%,100% 100%,50% 90%,0% 100%);
+	overflow-x: hidden !important;
 }
 .row{
 	width: 100%;
@@ -717,7 +722,9 @@ h4{
 
 
 
-
+.contact-container{
+	overflow-x: hidden !important;
+}
 
 
 
@@ -831,6 +838,10 @@ h4{
 }
 .secondtitle h1:hover{
 	letter-spacing:0;
+}
+.second-right-part:hover{
+	padding:0;
+	background-color:#FF5851; 
 }
 .second-right-part img{
 	margin-top:50px;
