@@ -3,35 +3,37 @@
 	padding: 0;
 }
 body{
-	transition-timing-function: ease;
 	overflow-x: hidden;
 	background-color: #F8F8F8
 }
+h1{
+	font-size: 6.25em;
+	font-family: 'Montserrat', sans-serif;
+	transition: all 2s ease;
+}
+h4{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 500;
+	letter-spacing: 1px;
+	transition: all 2s ease;
+}
+
+/* ---------------------------------------Landing Page------------------------- */
+
 
 .intro{
 	background-image: url('images/bg2.png');
 	width:100%;
 	height: 100vh;
 	border: 35px solid white;
-
-
 }
-.intronamediv{
-	height: auto;
+.intro .intronamediv{
 	width: 50%;
-	margin:auto;
-	padding-top: 150px;
-
+	margin:150px auto 0 auto;
 }
 #introname{
 	text-align:left;
-	font-size: 6.25em;
-	color:black;
-	font-family: 'Montserrat', sans-serif;
-	transition: all 2s ease;
-}
-#introname:hover{
-	letter-spacing: 6.5px;
+	color:black;	
 }
 .socialmediadiv{
 	background-color: white;
@@ -41,7 +43,6 @@ body{
 	padding-left: 5px;
 }
 .socialmediadiv ul{
-	text-decoration: none;
 	list-style: none;
 }
 .socialmediadiv i{
@@ -56,9 +57,7 @@ body{
 	bottom: 40%;
 	color:#dee3e2;
 	left:-7%;
-	transition-property:all;
-	transition-duration: 2s;
-	transition-timing-function: ease;
+	transition:all 2s ease;
 }
 .introdescription:hover{
 	letter-spacing: 1px;
@@ -78,8 +77,6 @@ body{
 	bottom:15%;
 	right:48%;
 	text-align: center;
-}
-.scroll{
 	color: black;
 }
 @keyframes scrolldown {
@@ -92,7 +89,7 @@ body{
 		opacity: 0;
 	}
 }
-/* -------------------------animation-------------------- */
+/* ---scroll-animation--- */
 .box-area{
 	position: absolute;
 	top: -35px;
@@ -109,7 +106,6 @@ body{
 	height: 25px;
 	animation: animate 20s linear infinite;
 	bottom: -150px;
-
 }
 .box-area li:nth-child(1){
 	left: 86%;
@@ -170,42 +166,17 @@ body{
 
 /* -----------------------------Second Div Start---------------------- */
 
-.seconddiv{
-	height:50%;
-	width: 100%;
-	background-size: cover;
-	background-repeat:no-repeat;
-	background-color: #F8F8F8;
-}
 .secondrow{
-	padding-bottom: 0;
-}
-	.secondtitle{
-		width: 30%;
-
-	}
-	.secondtitle h1{
-		margin:150px auto 0 auto;
-		font-family: 'Montserrat', sans-serif;
-		text-align:left;
-		font-size: 6.25em;
-		transition: all 2s ease;
-		width:75%;
-		color: #FF5851;
-		/* text-shadow:1px 1px black; */
-
-	}
-	.secondtitle:hover{
-		letter-spacing: 6.5px;
-	}
-	.secondtitle #secondtitile-fa{
-		margin-top: 195px;
-
-	}
-.row{
+	padding-bottom:0;
 	width: 100%;
+	background-color: #F8F8F8;
 	padding-bottom: 50px;
-	
+}
+.secondrow h1{
+	margin:150px auto 0 auto;
+	text-align:left;
+	width:75%;
+	color: #FF5851;
 }
 #underrowhr{
 	border: 5px solid  #FF5851;
@@ -214,12 +185,10 @@ body{
 	display: inline-block;
 }
 .second-right-part{
-	width: 30%;
 	text-align: center;
 	border-right: 10px solid  #FF5851;
 	border-bottom: 10px solid  #FF5851;
-	transition: all 2s ease;
-	
+	transition: all 2s ease;	
 }
 .second-right-part:hover{
 	padding: 0 50px;
@@ -231,8 +200,6 @@ body{
 	background-color: #FF5851;
 	line-height:2.5;
 	font-size: 130%; 
-	border-radius: 2%;
-
 }
 .second-right-part:hover img{
 	opacity:0.4; 
@@ -266,15 +233,19 @@ body{
 }
 
 /* ----------------------------------------Skill Div------------------------ */
-.skilldiv{
-	background-color:#dbdbdb;
-	width: 100%;
-	height:auto;
-	margin: 50px 0;
-	margin-bottom:70px
-}
+
 .skillrow{
 	padding-bottom: 0;
+	background-color:#dbdbdb;
+	width: 100%;
+	margin: 50px 0;
+	margin-bottom:70px;
+}
+#mob-skill-titleh1{
+	display: none;
+}
+#mob-skill-titleh4{
+	display: none;
 }
 #tap{
 	display: none;
@@ -287,59 +258,58 @@ body{
 	margin-bottom:50px;
 }
 .chartbar{
-	
-	
-	padding: 0;
 	transition: all 2s ease;
 	margin-top:13px;
 	height:40px;
-
-}
-#chartbar1{
 	width:100px;
-	margin-top:40px;
-	 background: linear-gradient(to bottom, #28a745 0%, #99ffcc 126%);
+}
+
+
+
+#chartbar1{
+	background: linear-gradient(to bottom, #28a745 0%, #99ffcc 126%);
 }
 #chartbar2{
-	width:100px;
-	 background: linear-gradient(to bottom, #17a2b8 0%, #66ccff 126%);
-	
+    background: linear-gradient(to bottom, #17a2b8 0%, #66ccff 126%);	
 }
 #chartbar3{
-	width:100px;
 	background: linear-gradient(to bottom, #ffca2c 0%, #ffffcc 126%);
 }
-#chartbar4{
-	width:100px;
+#chartbar4{	
 	background: linear-gradient(to bottom, #dc3545 0%, #ff6666 126%);
 }
-#chartbar5{
-	width:100px;
+#chartbar5{	
 	background: linear-gradient(to bottom, #007bff 0%, #99ccff 126%);
 }
-#chartbar6{
-	width:100px;
+#chartbar6{	
 	 background: linear-gradient(to bottom, #d56a82 0%, #ff99cc 126%);
-
 }
-.skilldiv:hover #chartbar1{
+
+
+
+
+.skillrow:hover #chartbar1{
 	width: 350px;
 }
-.skilldiv:hover #chartbar2{
+.skillrow:hover #chartbar2{
 	width: 300px;
 }
-.skilldiv:hover #chartbar3{
+.skillrow:hover #chartbar3{
 	width: 290px;
 }
-.skilldiv:hover #chartbar4{
+.skillrow:hover #chartbar4{
 	width: 320px;
 }
-.skilldiv:hover #chartbar5{
+.skillrow:hover #chartbar5{
 	width: 320px;
 }
-.skilldiv:hover #chartbar6{
+.skillrow:hover #chartbar6{
 	width: 300px;
 }
+
+
+
+
 .chartbar p{
 	background-color:#522D5B;
 	padding:5px 10px 12px 10px;
@@ -351,38 +321,27 @@ body{
 	display: none;
 	opacity: 0;
 }
-.projectdivhr{
-	background-color: #FF5851;
-	border:5px solid #FF5851;
-	width: 80%;
-	margin:0 0 100px auto;
-}
-#skilldiv-right i{
+
+#skillrow-right i{
 	display: block;
 	position: absolute;
 	top: 120px;
 	color: #d2d2d2;
 }
-#skilldiv-right h1{
+#skillrow-right h1{
 		margin:100px auto 20px 0;
-		font-family: 'Montserrat', sans-serif;
 		text-align:left;
 		font-size: 5em;
-		transition: all 2s ease;
 		width:70%;
 		color: #FF5851;
 		letter-spacing:2px;
 }
-#skilldiv-right h4{
-		width: 30%;
-		font-family: 'Ubuntu', sans-serif;
-		font-weight: 500;
-		letter-spacing: 1px;
-		transition: all 2s ease;
+#skillrow-right h4{
+		width: 30%;		
 }
-#skilldiv-right #webimage{
+#skillrow-right #webimage{
 	position: absolute;
-	top:192px;
+	top:165px;
 	width:30%;
 	left:60%;
 	animation:round 2s linear infinite;
@@ -403,51 +362,43 @@ body{
 		opacity: 1;
 	}
 }
-#skilldiv-right #webimage:hover{
+#skillrow-right #webimage:hover{
 	animation-play-state: paused;
 }
-#skilldiv-right:hover h1{
-		letter-spacing: 6px;
-	}
-#skilldiv-right:hover h4{
-		letter-spacing:1px;
-		width: 50%;
-	}
-#skilldiv-right:hover i{
-	width:500px;
-}
+
+
+
 /* --------------------------------------project div------------------------------ */
 
+
+
+.projectdivhr{
+	background-color: #FF5851;
+	border:5px solid #FF5851;
+	width: 80%;
+	margin:0 0 150px auto;
+}
 .projectdiv{
 	background-color:#F8F8F8;
 	width: 100%;
 	height:auto;
 	padding-bottom: 100px;
 }
-.projectdiv h1{
-		margin-left: 50px;
-		font-family: 'Montserrat', sans-serif;
-		text-align:left;
-		font-size: 6.25em;
-		transition: all 2s ease;
-		width:70%;
+.projec-ttitle-col{
+	display:flex;
+	justify-content: space-around;
+	align-content: center;
+}
+.project-title{
+	height:100px;
+	transform: rotate(-90deg);
+	margin-top:200px;
+}
+.projectdiv .projec-ttitle-col h1{
 		color: #FF5851;
-		letter-spacing:2px;
-}
-.projectdiv:hover h1{
-	letter-spacing:6px;
-}
-.projectdiv h4{
-		width: 30%;
-		margin-left: 50px;
-		font-family: 'Ubuntu', sans-serif;
-		font-weight: 500;
-		letter-spacing: 1px;
-		transition: all 2s ease;
 }
 #testimonials{
 	text-align: right;
-
 }
 .container-fluid{
 	color: #fff;
@@ -462,10 +413,8 @@ body{
 }	
 .carousel-icon{
 	margin-top: 20px;
-	color: green !important;
 }
 .carousel-control-prev{
-	
 	animation:prevbtn 1.5s linear infinite;
 	padding-left: 100px;
 
@@ -492,7 +441,7 @@ body{
 		letter-spacing:2px;
 }
 .container-fluid h4{
-		width: 50%;
+		width: 80%;
 		font-family: 'Ubuntu', sans-serif;
 		font-weight: 500;
 		letter-spacing: 1px;
@@ -500,7 +449,16 @@ body{
 		margin-left: auto;
 		color: #474747;
 }
+
+
+
+
+
 /* -------------------------network------------------------------- */
+
+
+
+
 .network{
 	width: 100%;
 	height: 100vh;
@@ -518,9 +476,6 @@ body{
 }
 .mob-network-div{
 	display: none;
-}
-.network-left table h6{
-	color: red
 }
 .network-left table{
 	margin:10% auto;
@@ -753,7 +708,19 @@ body{
 		transition: all 2s ease;
 		color: white;
 }
+
+
+
+
+
 /* ------------------------------Contact------------------------------------- */
+
+
+
+
+
+
+
 .contact-container h1{
 	margin:50px auto;
 	margin-bottom: 100px;
@@ -799,24 +766,34 @@ body{
 /* ---------------------------------------Media Query----------------------- */
 
 @media(max-width: 1000px){
+
+
+
 body{
 	transition-timing-function: ease;
 	overflow-x: hidden !important;
 }
- .intro{
-	border:none;
-	background-image: url('images/bg.png');
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
+h1{
+	font-size: 3.25em;
+	letter-spacing:1px;
+}
+h4{
+	font-size: 1.25em;
 }
 
-.intronamediv{
-	height: auto;
-	width: 50%;
-	margin-left:15%;
-	padding-top: 50%;
 
+/* --------------------------------Landing Page-------------------------- */
+
+
+
+
+.intro{
+	border:none;
+	background-image: url('images/bg.png');
+	overflow: hidden;
+}
+.intro .intronamediv{
+	margin:180px auto 0 auto;
 }
 #introname{
 	font-size: 300%;
@@ -835,53 +812,62 @@ body{
 	left:-35%;
 
 }
-#introname:hover{
-	letter-spacing: 2.5px;
-}
 .box-area{
-
 	top: 0;
 	left: 10%;
 	width: 90%;
 	height: 100%;
 }
 
-	.secondtitle h1{
-		margin:80px auto 0 auto;
-		font-size: 3.25em;
-		width:95%;
 
-	}
-	.secondtitle h1:hover{
-		letter-spacing: 4.5px;
-	}
+/* ------------------------------seconf div----------------------------------- */
 
+
+.secondrow{
+	margin:0 ;
+}
+.secondtitle h1{
+	margin:0 auto 0 auto;
+}
+.secondtitle h1:hover{
+	letter-spacing:0;
+}
 .second-right-part img{
-	margin-top:70px;
-	margin-bottom: 50px;
+	margin-top:50px;
+	margin-bottom:20px;
 }
 .second-right-part p{
 	width: 80%;
-	margin:1px auto;
-	margin-bottom: 50px;
+	font-weight: 200;
 	line-height:2;
-	font-family: 'Comic Neue', cursive;
-	font-weight: 600;
-	font-size:110%;
-}
-.seconddiv{
-	height:auto;
-	width: 100%;
 }
 .row{
-	padding-bottom: 30px;
-	
+	padding: 0;
+	padding-bottom: 30px;	
 }
-/* ---------------------Skill Div------------------------ */
-.skilldiv{
+
+
+/* -----------------------------------------Skill Div------------------------ */
+
+
+
+
+.skillrow{
 	overflow: hidden;
-	padding-bottom: 100px;
+	padding-bottom:0;
 	background-color:#F8F8F8;
+	margin-bottom:0;
+	margin-top:30px;
+}
+#mob-skill-titleh1{
+	display:block;
+	color: #FF5851;
+	text-align: center;
+}
+#mob-skill-titleh4{
+	display:block;
+	color:black;
+	text-align: center;
 }
 #tap{
 	display:block;
@@ -890,9 +876,12 @@ body{
 	font-family: 'Montserrat', sans-serif;
 	letter-spacing: 2px;
 	left: 20%;
-	top: 10%;
+	top: 30%;
 	opacity: 0.3;
 
+}
+.skillrow:hover #tap{
+	opacity: 0;
 }
 .chart{
 	height:auto;
@@ -900,84 +889,72 @@ body{
 	transform: rotate(-90deg);
 	margin-left:0;
 	margin-top: 100px;
-	margin-bottom: 100px;
+	margin-bottom:20px;
 }
 
 .chartbar p{
-	background-color:#878787;
+	background-color:#522D5B;
 	padding:5px 10px 12px 10px;
 	width:100px;
 }
-.skilldiv-hr{
-	display: none;
-}
-#dotfa{
-	display: none !important;
+.skillrow-hr{
+	display:block;
 }
 #arrowfa{
-	display: block;
-	opacity: 1;
+	display:none;
 }
-#skilldiv-right i{
-	top: 0;
-	color: #d2d2d2;
-	animation:kichinai 4s linear;
-	font-size: 80px;
-	margin-left: 5%;
-
+#skillrow-right h1{
+	display:none;
 }
-#skilldiv-right h1{
-		margin:90px auto 20px 5%;
-		font-size: 3.25em;
-		width:70%;
-		letter-spacing:2px;
+#skillrow-right h4{
+	display: none;
 }
-#skilldiv-right h4{
-		width: 90%;
-		font-size: 1em;
-		font-weight: 500;
-		letter-spacing: 1px;
-		transition: all 2s ease;
-		margin-left: 5%;
-		margin-bottom: 50px;
+#skillrow-right #webimage{
+	display: none;
 }
-#skilldiv-right #webimage{
-	position: absolute;
-	top:250px;
-	width: 40%;
-}
-#skilldiv-right:hover h1{
+#skillrow-right:hover h1{
 		letter-spacing: 6px;
 
 	}
-#skilldiv-right:hover h4{
+#skillrow-right:hover h4{
 		letter-spacing: 3px;
 		width: 100%;
 	}
 
 
 /* --------------------------------------project div------------------------------ */
+
+
+
+
 .projectdivhr{
-	display: none;
+	display:block;
+	margin:0 0 40px auto;
 }
 .projectdiv{
-	height:110vh;
+	height:auto;
 	padding-bottom:120px;
-
-
+	margin: 0;
+}
+.projec-ttitle-col{
+	width: 100%;
+}
+.project-title{
+	width: 100%;
+	transform: rotate(0deg);
+	margin-top:0px;
+	margin-bottom: 30px;
 }
 .projectdiv h1{
-		margin-left: 30%;
-		font-size: 3.25em;
-		width:70%;
-		text-align:left;
+		margin-left:30%;
+		width:50%;
 }
 .projectdiv h4{
-		width: 60%;
-		margin-left: auto;
-		text-align:left;
+		width: 80%;
+		margin-left:20%;
 		font-size: 1em;
-		margin-bottom: 30px;
+		margin-bottom: 50px;
+		text-align: right;
 }
 .container-fluid{
 	color: #fff;
@@ -990,7 +967,7 @@ body{
 	margin-bottom:30px;
 }	
 .carousel-control-prev{
-	margin-top: 450px;
+	margin-top: 400px;
 	margin-left:25%;
 }
 .carousel-control-prev i{
@@ -1030,10 +1007,13 @@ body{
 .mob-network-div ul{
 	list-style: none;
 }
+.mob-network-div li{
+	margin-bottom: 25px
+}
 .mob-network-div img{
 	height: 50px;
 	width: 50px;
-	margin:15px 10px 0 10px;
+	margin: 0 10px 0 10px;
 }
 .mob-network-div h5{
 	padding-top:10px;
