@@ -1,5 +1,8 @@
 <!doctype html>
 <html lang="en">
+
+<!-- ----------------------------------head---------------------------------- -->
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -13,27 +16,33 @@
     <link href="https://fonts.googleapis.com/css?family=Comic+Neue|Lato|Montserrat:800|Libre+Baskerville:400i|Ubuntu&display=swap" rel="stylesheet">
     <!-- ------------Font Awesome--------------- -->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+    <!-- -----------------animation--------------------- -->
+    <link rel="stylesheet" href="animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- ----------------title----------------- -->
     <title>I'm Ashutosh</title>
   </head>
+
+
+<!-- -----------------------------------Body--------------------------------- -->
+
   <body>
-      <div class="intro container-fluid">
-
-
-        <div class="intronamediv">
-          <h1 id="introname">Hello,<br>I am<br>Ashutosh<font style="color:#FF5851">.</font></h1>
-        </div>
-        <div class="socialmediadiv">
-          <ul>
-            <a href="https://www.facebook.com/AshutoshBisoyiFB"><li><i class="fab fa-facebook-f"></i></li></a>
-            <a href="https://www.instagram.com/ashutoshbisoyi/"><li><i class="fab fa-instagram"></i></li></a>
-            <a href="https://twitter.com/ashutoshbisoyi0"><li><i class="fab fa-twitter"></i></li></a>
-          </ul>
-        </div>
-        <div class="introdescription">
-          <span id="frontend">front-end</span> developer based in <span id="india" href="www.google.com">India <i class="fas fa-map-marker-alt"></i></span>
-        </div>
-        <div class="scroll">Scroll<br><i class="fas fa-angle-double-down"></i></div>
+    <!-- --------------------------Landing Page------------------------ -->
+    <div class="container-fluid intro wow fadeIn" data-wow-duration="5s">
+      <div class="intronamediv">
+        <h1 id="introname">Hello,<br>I am<br>Ashutosh<div style="display: inline-block" class="wow bounceInDown"  data-wow-duration="3s" data-wow-delay="1s"><font style="color:#FF5851">.</font></div></h1>
+      </div>
+      <div class="socialmediadiv">
+        <ul>
+          <a href="https://www.facebook.com/AshutoshBisoyiFB"><li><i class="fab fa-facebook-f"></i></li></a>
+          <a href="https://www.instagram.com/ashutoshbisoyi/"><li><i class="fab fa-instagram"></i></li></a>
+          <a href="https://twitter.com/ashutoshbisoyi0"><li><i class="fab fa-twitter"></i></li></a>
+        </ul>
+      </div>
+      <div class="introdescription">
+        <span id="frontend">front-end</span> developer based in <span id="india" href="www.google.com">India <i class="fas fa-map-marker-alt"></i></span>
+      </div>
+      <div class="scroll">Scroll<br><i class="fas fa-angle-double-down"></i></div>
         <ul class="box-area">
             <li style="background-color:#F8F8F8"></li>
             <li style="background-color:#F8F8F8"></li>
@@ -43,96 +52,106 @@
             <li style="background-color:#F8F8F8"></li>
             <li style="background-color:#F8F8F8"></li>
         </ul>
+    </div>
+    <!-- ------------------------------Second Div------------------------------ -->
+    <div class="row secondrow">
+      <div class="col-md-7 col-12 secondrow-titlecol">
+        <h1 class="wow lightSpeedIn">Who's<br>This Guy ?</h1>
       </div>
-      <div class="seconddiv">
-        <div class="row secondrow">
-          <div class="secondtitle col-md-7 col-12">
-          <h1>Who's<br>This Guy ?</h1>
-          </div>
-          <div class="second-right-part col-md-5 col-12">
-            <img src="images/myimage.png">
-            <p>I'm a freelancer <a href="#">Front-End Developer</a> in India.
+      <div class="second-right-part col-md-5 col-12">
+        <img src="images/myimage.png" class="wow fadeIn" data-wow-delay="1s">
+        <p class="wow fadeIn" data-wow-delay="1.5s">I'm a freelancer <a href="#">Front-End Developer</a> in India.
               I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.<br>
-              <a href="#">Let's make something special.</a></p>
+        <a href="#">Let's make something special.</a></p>
+      </div>
+    </div>
+    <hr id="underrowhr" data-aos="slide-left">
+
+
+    <!-- ---------------------------------Skill--------------------------- -->
+
+    <div class="row skillrow" data-aos="zoom-in-up">
+      <div class="col-md-5 row1">
+        <h1 id="mob-skill-titleh1">Technical<br>Skills</h1>
+        <h4 id="mob-skill-titleh4">what i'm good at</h4>
+        <h2 id="tap">TAP HERE</h2>
+        <div class="chart">
+          <div class="chartbar" id="chartbar1"><p id="chartp1">HTML</p></div>
+          <div class="chartbar" id="chartbar2"><p id="chartp2">CSS</p></div>
+          <div class="chartbar" id="chartbar3"><p id="chartp3">JS</p></div>
+          <div class="chartbar" id="chartbar4"><p id="chartp4">Animation</p></div>
+          <div class="chartbar" id="chartbar5"><p id="chartp5">Responsive</p></div>
+          <div class="chartbar" id="chartbar6"><p id="chartp6">UX</p></div>
           </div>
         </div>
-        <hr id="underrowhr">
-        
+      <div class="col-md-7 row2" id="skillrow-right">
+          <br>
+          <h1>Technical<br>Skills</h1>
+          <h4>what i'm good at</h4>
+          <img src="images/web.png" id="webimage">
       </div>
-      <div class="skilldiv">
-        <div class="row skillrow">
-          <div class="col-md-5 row1">
-            <h2 id="tap">TAP HERE</h2>
-            <div class="chart">
-              <div class="chartbar" id="chartbar1"><p id="chartp1">HTML</p></div>
-              <div class="chartbar" id="chartbar2"><p id="chartp2">CSS</p></div>
-              <div class="chartbar" id="chartbar3"><p id="chartp3">JS</p></div>
-              <div class="chartbar" id="chartbar4"><p id="chartp4">Animation</p></div>
-              <div class="chartbar" id="chartbar5"><p id="chartp5">Responsive</p></div>
-              <div class="chartbar" id="chartbar6"><p id="chartp6">UX</p></div>
-            </div>
-          </div>
-          <div class="col-md-7 row2" id="skilldiv-right">
-            <i class="fas fa-arrow-up" id="arrowfa"></i>
-            <br>
-            <h1>Technical<br>Skills</h1>
-              
-            <h4>what i'm good at</h4>
-            <img src="images/web.png" id="webimage">
-          </div>
+    </div>
+
+
+    <!-- ---------------------------Projects--------------------------- -->
+
+
+    <div class="projectdiv row">
+
+      <hr class="projectdivhr" data-aos="slide-right">
+
+      <div class="col-md-3 projec-ttitle-col" data-aos="slide-left">
+        <div class="project-title">
+          <h1>Projects</h1>
+          <h4>result of sleepless nights</h4>
         </div>
       </div>
-      <div class="projectdiv">
-        <hr class="projectdivhr">
-        <h1>Projects</h1>
-        <h4>result of sleepless nights</h4>
-        <section id="testimonials">
-      
-          <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="container-fluid">
-                <div class="carousel-item active">
-                  <a href="https://ashutoshbisoyi.github.io/TinDog/"><img src="images/tindog.PNG" class="carousel-image"></a><br>
-                  <h2>TIN DOG</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/AshCoder/"><img  src="images/ashcoder.PNG" class="carousel-image"></a><br>
-                  <h2>ASH CODER</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/washaholic/"><img src="images/washaholicnew.PNG" class="carousel-image"></a><br>
-                  <h2>WASHAHOLIC</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/washaholic/"><img src="images/wahaholicold.PNG" class="carousel-image"></a><br>
-                  <h2>WASHAHOLIC V2</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/personalsite/"><img src="images/personalsite.PNG"  class="carousel-image" ></a><br>
-                  <h2>PERSONAL SITE TAMPLATE</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/dicegame/"><img class="carousel-image" src="images/dicegame.PNG"></a><br>
-                  <h2>DICE GAME</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/drumkit/"><img class="carousel-image" src="images/drumkit.PNG"></a><br>
-                  <h2>DRUM KIT</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
-                <div class="carousel-item">
-                  <a href="https://ashutoshbisoyi.github.io/lovecalculator/"><img class="carousel-image" src="images/lovecalculator.PNG"><br>
-                  <h2>LOVE CAKCULATOR</h2>
-                  <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
-                </div>
+
+      <section id="testimonials" class="col-md-9" data-aos="slide-left">
+        <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="container-fluid">
+              <div class="carousel-item active">
+                <a href="https://ashutoshbisoyi.github.io/TinDog/"><img src="images/tindog.PNG" class="carousel-image"></a><br>
+                <h2>TIN DOG</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
               </div>
-            
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/AshCoder/"><img  src="images/ashcoder.PNG" class="carousel-image"></a><br>
+                <h2>ASH CODER</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+               </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/washaholic/"><img src="images/washaholicnew.PNG" class="carousel-image"></a><br>
+                <h2>WASHAHOLIC</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/washaholic/"><img src="images/wahaholicold.PNG" class="carousel-image"></a><br>
+                <h2>WASHAHOLIC V2</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/personalsite/"><img src="images/personalsite.PNG"  class="carousel-image" ></a><br>
+                <h2>PERSONAL SITE TAMPLATE</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/dicegame/"><img class="carousel-image" src="images/dicegame.PNG"></a><br>
+                <h2>DICE GAME</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/drumkit/"><img class="carousel-image" src="images/drumkit.PNG"></a><br>
+                <h2>DRUM KIT</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+              <div class="carousel-item">
+                <a href="https://ashutoshbisoyi.github.io/lovecalculator/"><img class="carousel-image" src="images/lovecalculator.PNG"></a><br>
+                 <h2>LOVE CALCULATOR</h2>
+                <h4>A perfect website for those who love dogs.Fills all the requirements for the dogs starting from food to belt.</h4>
+              </div>
+            </div>
           </div>
             <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="next">
             <span class="aria-hidden='true'"><i class="fas fa-chevron-circle-left fa-9x" style="color: #FF5851"></i></span>
@@ -145,8 +164,15 @@
           </div>
         </section>
       </div>
+
+
+
       <!-- ------------------Network--------------- -->
-      <div class="row network">
+
+
+
+
+      <div class="row network" data-aos="zoom-in-up">
         <div class="col-md-9 col-6 network-left">
           <div class="mob-network-div">
               <ul>
@@ -211,6 +237,16 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script src="wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+     AOS.init({
+      offset:200,
+      duration:1000
+    });
+</script>          
   </body>
 </html>
